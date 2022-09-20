@@ -1,0 +1,22 @@
+{
+  "name": "microfrontend-vite",
+  "version": "1.0.0",
+  "workspaces": [
+    "home"
+  ],
+  "description": "microfrontend with vite and Vue",
+  "scripts": {
+    "start": "pnpm start",
+    "build": "pnpm --parallel --filter \"./**\" build",
+    "watch": "pnpm --parallel --filter \"./**\" build --watch",
+    "serve": "pnpm --parallel --filter \"./**\" serve",
+    "stop": "kill-port --port 5000,5005,5002,5003",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@originjs/vite-plugin-federation": "^1.1.9",
+    "kill-port": "^2.0.1"
+  },
+  "author": "Patrick Monteiro<eng.patrickmonteiro@gmail.com>",
+  "license": "ISC"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "home",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5005 --strictPort",
+    "serve": "vite preview --port 5005 --strictPort",
+    "build": "vite build",
+    "clean": "rm -rf dist",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.1.0",
+    "@vue/compiler-sfc": "^3.2.39",
+    "vite": "^3.1.0"
+  }
+}
